@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage   
+    x:TypeArguments="viewModels:SecondViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:NavigationMvxForms.Core.ViewModels;assembly=NavigationMvxForms.Core"
+    x:Class="NavigationMvxForms.Core.Views.SecondView"
+    Title="Second">
+    <views:MvxContentPage.Content>
+        <StackLayout>
+          <Label 
+            Text="{Binding Parameter}"/>
+            <Button 
+              Text="Go back"
+              Command="{Binding BackCommand}"/>
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>
