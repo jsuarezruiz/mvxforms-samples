@@ -6,6 +6,7 @@ Available samples:
 
 - **Basic**: Basic sample using bindings and commands.
 - **Navigation**: Basic navigation sample and passing parameters.
+- **Plugins**: Sample using community plugins.
 
 ## Copyright and license
 
