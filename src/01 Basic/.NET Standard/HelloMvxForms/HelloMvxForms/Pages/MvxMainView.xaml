@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:TypeArguments="viewModels:MvxMainViewModel"
+    x:Class="HelloMvxForms.Core.Views.MvxMainView"
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:HelloMvxForms.Core.ViewModels;assembly=HelloMvxForms.Core"
+    Title="Hello Mvx">
+    <views:MvxContentPage.Content>
+        <StackLayout>
+            <Button
+                Text="Click me!"
+                Command="{Binding CounterCommand}" />
+            <Label
+                Text="{Binding Message}" />
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>
